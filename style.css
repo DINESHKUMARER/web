@@ -1,6 +1,6 @@
-div {
-    background-color: rgb(255, 2, 2);
-    padding: 20px;
-    color: black;
+button
+{
+    color: rgb(20, 33, 219);
     width: 200px;
+    text-align: center;
 }
