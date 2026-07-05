@@ -17,23 +17,12 @@ color:#fff;
 padding-bottom:50px;
 }
 
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 8%;
-}
-
 nav {
 display:flex;
-justify-content: space-between;
+justify-content:space-between;
 align-items: center;
 padding: 20px 8%;
-}
-
-.menu{
-    display: flex;
-    gap: 40px;
+gap: 15px;
 }
 
 nav a{

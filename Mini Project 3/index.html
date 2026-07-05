@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather & Movie App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Applications</h1>
+        <p>Weather App & Movie Search Dashboard</p>
+    </header> 
+    <br>
+
+    <main class="container">
+        <section class="card-section">
+            <h2> Weather App </h2>
+            <div class="search-box">
+                <input type="text" id="weather-input" placeholder="Enter city name...">
+                <button id="weather-btn">Search</button>
+            </div>
+            <div id="weather-result" class="result-container">
+                <p class="placeholder-text">Search for a city to display real-time weather information...</p>
+            </div>
+        </section>
+
+        <section class="card-section">
+            <h2> Movie App </h2>
+            <div class="search-box">
+                <input type="text" id="movie-input" placeholder="Enter movie title...">
+                <button id="movie-btn">Search</button>
+            </div>
+            <div id="movie-result" class="result-container">
+                <p class="placeholder-text">Search for a movie title to view ratings and posters.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p> &copy; 2026 Web Development Minor Project 3</p>
+    </footer> 
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>
