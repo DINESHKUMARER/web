@@ -23,7 +23,7 @@ header h1 {
     font-size: 2.5rem;
     font-weight: 800;
     background: linear-gradient(to right, #000c11, #0f165e);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: -0.05em;
 }
@@ -83,7 +83,7 @@ header p {
 }
 
 .search-box:focus-within {
-    border-color: #3564e7; 
+    border-color: #3564e7;
 }
 
 .search-box input {
@@ -185,7 +185,7 @@ header p {
 }
 
 .error-msg {
-    color: #9e4242;
+    color: #cf3f3f;
     font-weight: 600;
 }
 
