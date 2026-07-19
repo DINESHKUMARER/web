@@ -3,157 +3,251 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
-   <style>
-     *{
-         margin:0;
-         padding:0;
-         box-sizing:border-box;
-         font-family:Arial, Helvetica, sans-serif;
-      }
+    <title>Personal Portfolio</title>
 
-    body{
-         background:#f4f7fc;
-         color:black;
-      }
+    <link rel="stylesheet" href="style.css">
 
-    header{
-        background-color: rgb(184, 110, 184);
-         color:white;
-         padding:20px;
-         text-align:center;
-      }
-      header p{
-        color: white;
-         margin-bottom: 10px;
-      }
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    nav{
-         background:plum;
-         padding:15px;
-         text-align:center;
-      }
-
-    nav a{
-         color:white;
-         text-decoration:none;
-         margin:15px;
-         font-weight:bold;
-         transition:.3s;
-      }
- 
-    nav a:hover{
-         color:#770677;
-      }
-
-     section{
-         width:90%;
-         max-width:900px;
-         margin:30px auto;
-         background:white;
-         padding:25px;
-         border-radius:10px;
-         box-shadow:0 5px 15px rgba(0,0,0,.2);
-      }
-
-    h2{
-         color:purple;
-          margin-bottom:15px;
-      }
-
-      ul{
-         margin-left:20px;
-      }
-
-    .project{
-         background:#f2f2f2;
-         padding:15px;
-         margin-top:10px;
-         border-left:5px solid #007BFF;
-      }
-
-    .contact p{
-        margin:10px 0;
-      }
-
-     footer{
-         background:#975692;
-         color:white;
-         text-align:center;
-         padding:15px;
-         margin-top:20px;
-      }
-</style>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
+
 <body>
-    <header>
-        <h2>Dinesh Kumar ER</h2>
-        <p>Personal Portfolio</p>
-         <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Skills</a>
-            <a href="#">Project</a>
-            <a href="#">Login</a>
-         </nav>
-     </header>
-        <hr>
-    
-        <section classs="Home">
-            <h2>Home</h2>
-            <p><b>Name:</b> Dinesh Kumar E.R</E></p>
-            <p>hii I am a B.Sc. Applied Science graduate. I am interested in Web Development</p>
-        </section>
-        <hr>
 
-        <section class="About">
-            <h2>About me</h2>
-            <h3>Education</h3>
-            <ul>
-                <li>Applied Science</li>
-            </ul>
-            <h3>Intrestes</h3>
-            <ul>
-                <li>Wed Development</li>
-                <li>Programming</li>
-                <li>Learning New Skills and Techniques</li>
-            </ul>
-        </section>
-        <hr>
-         
-        <section class="Skills">
-            <h2>Skills</h2>
-            <h3>Skills</h3>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS</li>
-                <li>Git & GitHub</li>
-                <li>Python</li>
-            </ul>
-        </section>
-        <hr>
+<header>
 
-        <section class="Project">
-            <h2>Project</h2>
-            <h3>Mini Project </h3>
-            <ul>
-                <li>Multi-page Personal Portfolio (HTML)</li>
-            </ul>
-            <p>( Designed a personal portfolio website using HTML and CSS )</p>
-        </section>
-        <hr>
+    <div class="logo">
+        Personal <span>Protfolio</span>
+    </div>
 
-        <section class="contact">
-            <h2>Contact</h2>
-            <h3>Contact</h3>
-            <p><b>Name:</b>Dinesk Kumar ER</p>
-            <p><b>Email:</b>dk4521930@gmail.com</p>
-            <p><b>Phone no:</b>+91 9043660923</p>
-            <p><b>Location:</b>Tamil Nadu, India</p>
-        </section>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <a href="#contact" class="btn">Resume</a>
 
-        <footer>
-            <p>&copy; 2026 Dinesh Kumar | All Rights Reserved.</p>
-        </footer>
+</header>
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <h4>Hello, Guys I'm</h4>
+        <h1>DineshKumar ER</h1>
+        <h2>Frontend Web Developer</h2>
+        <p> I design beautiful, responsive websites using HTML, CSS and Bootstrap.Passionate about creating modern user experiences with clean and professional designs.        </p>
+
+        <div class="hero-buttons">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="#contact" class="btn2">Contact Me</a>
+        </div>
+
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+        <div class="image-box">
+            <img src="https://images.pexels.com/photos/879109/pexels-photo-879109.jpeg" alt="Profile">
+        </div>
+    </div>
+
+</section>
+
+<section class="features">
+    <div class="feature-card">
+        <i class="fas fa-code"></i>
+          <h3>Frontend</h3>
+        <p>Responsive websites using HTML5,CSS3 and Bootstrap.</p>
+    </div>
+
+    <div class="feature-card">
+        <i class="fas fa-palette"></i>
+         <h3>UI Design</h3>
+         <p>Modern, clean and attractive website layouts.</p>
+    </div>
+
+    <div class="feature-card">
+        <i class="fas fa-laptop-code"></i>
+         <h3>Web Projects</h3>
+          <p>Creative portfolio and landing page designs.</p>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <div class="about-image">
+        <img src="https://images.pexels.com/photos/38440159/pexels-photo-38440159.jpeg" alt="About">
+    </div>
+
+    <div class="about-content">
+        <h2>About Me</h2>
+         <p>I'm a passionate Frontend Web Developer who enjoys creating modern, responsive and user-friendly websites.
+            I love learning new technologies and improving my design and coding skills every day.
+        </p>
+
+    <div class="about-info">
+        <div class="info">
+            <h3>Name</h3>
+            <p>Dinesh Kumar</p>
+        </div>
+
+            <div class="info">
+                <h3>Email</h3>
+                <p>dk23S012@gmail.com</p>
+            </div>
+
+            <div class="info">
+                <h3>Location</h3>
+                <p>Tamil Nadu, India</p>
+            </div>
+
+            <div class="info">
+                <h3>Experience</h3>
+                <p>Frontend Developer</p>
+            </div>
+        </div>
+       <a href="#" class="btn">Download CV</a>
+    </div>
+</section>
+
+<section id="skills" class="skills">
+    <div class="section-title">
+        <h2>My Skills</h2>
+        <p>Technologies I Use</p>
+    </div>
+
+    <div="skills-container">
+        <div class="skill">
+            <h4>HTML</h4>
+            <div class="progress">
+                <span class="html"></span>
+            </div>
+            <p>90%</p>
+        </div>
+
+        <div class="skill">
+            <h4>CSS</h4>
+        <div class="progress"><span class="css"></span>
+          </div>
+          <p>85%</p>
+        </div>
+
+        <div class="skill">
+            <h4>Bootstrap</h4>
+            <div class="progress">
+                <span class="bootstrap"></span>
+            </div>
+            <p>70%</p>
+        </div>
+
+        <div class="skill">
+            <h4>JavaScript</h4>
+            <div class="progress">
+                <span class="javascript"></span>
+            </div>
+            <p>75%</p>
+        </div>
+    </div>
+
+</section>
+
+<section class="education">
+    <div class="section-title">
+        <h2>Education</h2>
+        <p>My Academic Journey</p>
+    </div>
+
+    <div class="education-container">
+        <div class="edu-card">
+            <h3>B.Sc Applied Science</h3>
+            <span>2023 - 2026</span>
+            <p>Learning programming,Database and designing.</p>
+        </div>
+
+        <div class="edu-card">
+            <h3>Higher Secondary</h3>
+            <span>Completed</span>
+            <p>Physics,chemistry,Mathematics and Science.</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="projects">
+    <div class="section-title">
+        <h2>My Projects</h2>
+        <p>Some of My Recent Work</p>
+    </div>
+
+    <div class="project-container">
+        <div class="project-card">
+            <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg" alt="Portfolio">
+             <h3>Personal Portfolio</h3>
+             <p>Responsive portfolio website created using HTML and CSS.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <img src="https://images.pexels.com/photos/574069/pexels-photo-574069.jpeg" alt="Landing Page">
+              <h3>Fitness Landing Page</h3>
+              <p>Modern landing page for TurboRun treadmill with responsive layout.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <img src="https://images.pexels.com/photos/3584931/pexels-photo-3584931.jpeg" alt="Restaurant">
+              <h3>Restaurant Website</h3>
+              <p>Responsive restaurant homepage with clean and attractive UI.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="section-title">
+        <h2>Contact Me</h2>
+        <p>Let's Work Together</p>
+    </div>
+
+    <div class="contact-container">
+        <div class="contact-info">
+            <h3>Get In Touch</h3>
+            <p><i class="fas fa-envelope"></i>dk23S012@gmail.com</p>
+            <p><i class="fas fa-phone"></i>+91 9876543210</p>
+            <p><i class="fas fa-location-dot"></i>Tamil Nadu, India</p>
+        </div>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email"placeholder="Your Email"required>
+            <input type="text" placeholder="Subject">
+            <textarea rows="6"placeholder="Message"></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <h2>Dinesh Kumar</h2>
+    <p>Frontend Web Developer</p>
+
+    <div class="footer-icons">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+    </div>
+    <p class="copy"> &copy;2026 Dinesh Kumar. All Rights Reserved.</p>
+
+</footer>
 </body>
 </html>
