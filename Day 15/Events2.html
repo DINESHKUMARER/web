@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+         display: flex;
+         text-align: center;
+        }
+        .piano{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        
+        }
+        .key{
+           border: 1px solid;
+           width: 60px;
+           height: 20px;
+           margin: 2px;
+           cursor: pointer;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Piano</h1>
+
+    <div class="Piano">
+        <div class="key" data-note="Q">QAT</div>
+        <div class="key" data-note="W">W</div>
+        <div class="key" data-note="E">E</div>
+        <div class="key" data-note="R">R</div>
+
+    </div>
+
+    <audio id="audio-Q" src="./alex-morgan-stride-piano-restaurant-568144.mp3"></audio>
+    <audio id="audio-W" src="./alex-morgan-stride-piano-study-session-568163.mp3"></audio>
+    <audio id="audio-E" src="./alexzavesa-dance-playful-night-510786.mp3"></audio>
+    <audio id="audio-R" src="./artmylife-powerful-dramatic-trailer-514242.mp3"></audio>
+
+    <script>
+        const keys = document.getElementByClassNmae("key")
+        console.log(keys)
+
+        keys.forEach( function(e){
+
+            const note =e.getAttribute("data-note")
+
+            const audio = document.getElementById("audio-"+note) 
+
+            e.addElementListner('cilck',function(){
+                audio.currentTime = 0;
+                audio.play()
+        })
+
+        })
+    </script>
+
+
+</body>
+</html>
