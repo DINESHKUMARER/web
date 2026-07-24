@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name ="Dinesh"
+        let country = "Russia"
+
+        console.log("My name is",name,"and I am From",country , "good Evenomg")
+
+        console.log(`Dear ${name},
+
+        How are you? did you cme from ${country},
+
+        `)
+
+        function xyz(){
+            console.log("Hello I am Old function")
+        }
+
+        let abc = ()=>{
+            console.log("Hello I am Arrow Function")
+        }
+        abc()
+
+        setTimeout(()=>{
+            console.log("Hello I am SetTimeout");
+        },1000); //1000 = 1s
+        
+        setInterval(()=>{
+            console.log("Hello I am SetInterval");
+        },2000);
+
+    </script>
+</body>
+</html>
