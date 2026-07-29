@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //cla back - A callback is a function passed to another function.
+
+        function DoHomeWork(subject,callback){
+             
+            console.log(`Doing HomwWork ${subject}`)
+
+            callback()
+        }
+        DoHomeWork("Maths", function(){
+            console.log(`Home Work Done - Going Out`)
+        })
+    </script>
+</body>
+</html>
