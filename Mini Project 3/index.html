@@ -3,43 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather & Movie App</title>
+    <title>Weather & Movie Search</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+    <!-- Background Blur -->
+    <div class="bg-circle one"></div>
+    <div class="bg-circle two"></div>
+
     <header>
-        <h1>Interactive Web Applications</h1>
-        <p>Weather App & Movie Search website</p>
-    </header> 
-    <br>
+        <h1>🌍 Interactive Web Applications</h1>
+        <p>Weather Forecast & Movie Search</p>
+    </header>
+
     <main class="container">
+
+        <!-- Weather Card -->
         <section class="card-section">
-            <h2> Weather App </h2>
+
+            <div class="card-title">
+                <i class="fa-solid fa-cloud-sun"></i>
+                <h2>Weather App</h2>
+            </div>
+
             <div class="search-box">
-                <input type="text" id="weather-input" placeholder="Enter city name...">
-                <button id="weather-btn">Search</button>
+
+                <input
+                type="text"
+                id="weather-input"
+                placeholder="Enter city name">
+
+                <button id="weather-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Search
+                </button>
+
             </div>
+
             <div id="weather-result" class="result-container">
-                <p class="placeholder-text">Search for a city to display real-time weather information...</p>
+
+                <p class="placeholder-text">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Search any city to view live weather details.
+                </p>
+
             </div>
+
         </section>
 
+        <!-- Movie Card -->
         <section class="card-section">
-            <h2> Movie App </h2>
+
+            <div class="card-title">
+                <i class="fa-solid fa-film"></i>
+                <h2>Movie Search</h2>
+            </div>
+
             <div class="search-box">
-                <input type="text" id="movie-input" placeholder="Enter movie title...">
-                <button id="movie-btn">Search</button>
+
+                <input
+                type="text"
+                id="movie-input"
+                placeholder="Enter movie title">
+
+                <button id="movie-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Search
+                </button>
+
             </div>
+
             <div id="movie-result" class="result-container">
-                <p class="placeholder-text">Search for a movie title to view ratings and posters.</p>
+
+                <p class="placeholder-text">
+                    <i class="fa-solid fa-clapperboard"></i>
+                    Search your favourite movie to view poster & rating.
+                </p>
+
             </div>
+
         </section>
+
     </main>
-    <br>
+
     <footer>
-        <p> &copy; 2026 Web Development Minor Project 3</p>
-    </footer> 
+        <p>© 2026 | Web Development Minor Project 3</p>
+    </footer>
 
     <script src="app.js" type="module"></script>
+
 </body>
 </html>
