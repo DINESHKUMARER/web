@@ -1,48 +1,34 @@
 // import React from "react";
-//  function App(){
-//   function handleClick(){
-//     alert (`Good Evening Welcome To React`)
-//   }
+
+// function App(){
+
+// function handleClick(){
+//     alert('Good Morning Welcome To React');
+// }
 //   return(
 //   <>
-//   <button onClick={handleClick}>Click</button>
+//   <button onClick={handleClick}>Click Me</button>
 //   </>
 //   )
 //  }
-//  export default App;
+// export default App;
 
-//Example - 2
-// import React from "react";
-// import { useState } from "react";
-
-//  function App(){
-
-//   const [isFollow, setIsFollow] = useState (false);
-
-//   return(
-//   <>
-//   <button onClick={()=> setIsFollow(!isFollow)}>
-//             {isFollow ? "Following": "Follow"}
-//   </button>
-//   </>
-//   )
-//  }
-//  export default App;
-
-//Example - 3
 import React from "react";
 import { useState } from "react";
 
- function App(){
+function App(){
 
-  const [isFollow, setIsFollow] = useState (false);
-
+    const[text,setText] = useState("")
   return(
   <>
-  <button onClick={()=> setIsFollow(!isFollow)}>
-      {isFollow ? "Following": "Follow"}
-  </button>
+    <input
+    type="text"
+    placeholder="Search..."
+    onChange={(e)=> setText(e.target.value)}
+    />
+  
+  <h3>You typed : {text}</h3>
   </>
   )
  }
- export default App;
+export default App;
